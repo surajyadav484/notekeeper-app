@@ -47,7 +47,7 @@ const notesSlice = createSlice({
   extraReducers(builder) {
     builder
       .addCase(fetchNotes.fulfilled, (state, action) => {
-        //console.log(action.payload);
+        console.log(action.payload);
         state.notes = action.payload.reverse();
       })
 
