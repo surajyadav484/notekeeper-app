@@ -3,15 +3,15 @@ const router = express.Router();
 const noteController = require("../controller/notekeeper");
 
 //GET: http://localhost:5000/
-router.get("/", noteController.getNotes);
+router.get("/api/", noteController.getNotes);
 
 //POST: http://localhost:5000/addNote
-router.post("/addNote", noteController.addNote);
+router.post("/api/addNote", noteController.addNote);
 
 //PUT: http://localhost:5000/editNote
-router.put("/editNote", noteController.editNote);
+router.put("/api/editNote", noteController.editNote);
 
 //DELETE: http://localhost:5000/delete/
-router.delete("/delete/:noteId", noteController.deleteNotes);
+router.delete("/api/delete/:noteId", noteController.deleteNotes);
 
 module.exports = router;
