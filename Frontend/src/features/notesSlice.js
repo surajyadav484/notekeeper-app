@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const GET_NOTES = "/";
+const GET_NOTES = "/api";
 const POST_NOTES = "/api/addNote";
 const EDIT_NOTES = "/api/editNote";
 const DELETE_NOTES = "/api/delete";

@@ -3,7 +3,7 @@ const router = express.Router();
 const noteController = require("../controller/notekeeper");
 
 //GET: http://localhost:5000/
-router.get("/api/", noteController.getNotes);
+router.get("/api", noteController.getNotes);
 
 //POST: http://localhost:5000/addNote
 router.post("/api/addNote", noteController.addNote);
